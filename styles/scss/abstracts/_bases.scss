@@ -1,6 +1,9 @@
-// styles/scss/abstracts/_base.scss
 @use 'typo';
 @use 'colors';
+
+// Définition des variables de breakpoints si pas déjà fait dans ce fichier
+$mq-tablet: 768px;
+$mq-desktop: 1024px;
 
 body {
     font-family: typo.$font-main;
@@ -8,11 +11,14 @@ body {
     line-height: 1.55; 
     background-color: colors.$color-bg;
     color: colors.$color-text;
-    padding: 0 2rem;
     margin: 0;
+    
+    // Mobile First : Petit padding par défaut
+    padding: 0 1rem;
 
-    @media (max-width: 768px) {
-        padding: 0 1rem;
+    // Tablette et Desktop : Padding plus large synchronisé sur la grille
+    @media (min-width: $mq-tablet) {
+        padding: 0 2rem;
     }
 }
 

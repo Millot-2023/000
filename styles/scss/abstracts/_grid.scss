@@ -1,28 +1,69 @@
-/* --- MODULE : LAYOUT GRID --- */
+/* --- STRUCTURE : GRID & FLOATS --- */
 
-// Base de la grille (commune)
 .l-grid {
     display: grid;
     gap: var(--grid-gap, 2rem);
     margin: 2rem 0;
-}
 
-// Bloc 2 colonnes indépendant
-.l-grid--2 {
-    grid-template-columns: repeat(2, 1fr);
+    // Bloc 2 colonnes (Optionnel, conservé car présent dans ton code)
+    &--2 {
+        grid-template-columns: repeat(2, 1fr);
 
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    // Bloc 3 colonnes : C'est ici que le "3 ou 1" est appliqué
+    &--3 {
+        grid-template-columns: repeat(3, 1fr);
+
+        @media (max-width: 1024px) {
+            grid-template-columns: 1fr;
+        }
     }
 }
 
-// Bloc 3 colonnes indépendant
-.l-grid--3 {
-    grid-template-columns: repeat(3, 1fr);
+// Floats
+.c-float-container {
+    display: flow-root; 
+    width: 100%;
+    margin-bottom: 2rem;
+}
 
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
+.u-float-left {
+    float: left;
+    width: 150px;
+    height: 100px;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.u-float-right {
+    float: right;
+    width: 150px;
+    height: 100px;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.u-no-float {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -1,76 +1,18 @@
-// styles/scss/abstracts/_blocks.scss
-
 .c-block-wrapper {
     position: relative; 
-    margin-bottom: 5rem;    // Espace entre deux blocs complets
-    padding-bottom: 3rem;   // Espace interne pour décoller le bouton du contenu
+    margin-bottom: 5rem;
+    padding-bottom: 3rem;
 
     &__copy-btn {
         position: absolute;
-        bottom: 0;          // On le cale maintenant au bord du padding
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        
         z-index: 10;
         cursor: pointer;
-        
-        // Un style minimal pour le voir mieux
         background: none;
         border: 1px solid rgba(0,0,0,0.2);
         padding: 0.3rem 0.8rem;
         font-size: 0.8rem;
     }
-}
-
-
-
-// _block.scss
-
-.c-float-container {
-    display: flow-root; // Le "clearfix" moderne : force le parent à englober les floats
-    width: 100%;
-    margin-bottom: 2rem;
-    background: transparent; 
-}
-
-// Règle d'alignement simple sans imbrication
-.c-float-container p {
-    margin-top: 0;
-}
-
-.u-float-left {
-    float: left;
-    width: 150px;
-    height: 100px;
-    margin-right: 1.5rem; // Espace crucial pour que le texte ne colle pas à droite
-    margin-bottom: 1rem;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.u-float-right {
-    float: right;
-    width: 150px;
-    height: 100px;
-    margin-left: 1.5rem; // Espace crucial pour que le texte ne colle pas à gauche
-    margin-bottom: 1rem;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.u-no-float {
-    width: 100%;
-    height: 100px;
-    margin-bottom: 1rem;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
