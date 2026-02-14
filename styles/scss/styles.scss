@@ -5,3 +5,4 @@
 
 @use './abstracts/bases' as *;      // Styles généraux (Desktop)
 @use './abstracts/grid' as *;       // Structure (Desktop + Mobile interne)
+@use "abstracts/blocks" as *;

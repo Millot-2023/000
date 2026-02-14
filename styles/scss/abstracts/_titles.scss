@@ -29,6 +29,19 @@
                 font-size: 1.8rem;
             }
         }
+
+        &.c-title-group__item--h2 {
+            font-size: 2.5rem;
+            @media (max-width: 768px) {
+                font-size: 1.4rem;
+            }
+        }
+
+
+
+
+
+
         
         // ... tu peux continuer pour h3, h4 etc.
     }
