@@ -3,6 +3,9 @@
 @use './abstracts/colors';
 @use './abstracts/typo';
 
-@use './abstracts/bases' as *;      // Styles généraux (Desktop)
-@use './abstracts/grid' as *;       // Structure (Desktop + Mobile interne)
-@use "abstracts/blocks" as *;
+@use './abstracts/bases' as *;    
+@use './abstracts/grid' as *;     
+@use './abstracts/blocks' as *;   
+
+// Ajout du composant Header
+@use './layout/header' as *;
