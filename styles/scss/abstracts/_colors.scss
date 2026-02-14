@@ -1,0 +1,19 @@
+// --- CHARTE COULEUR (abstracts/_colors.scss) ---
+
+// 1. LA PALETTE (Les pigments bruts)
+$clr-white:    #ffffff;
+$clr-black:    #1a1a1a;
+$clr-gray-lt:  #f4f4f4; // Gris clair pour les fonds de section
+$clr-gray-md:  #bdc3c7; // Gris moyen pour les bordures ou textes secondaires
+
+// Ta couleur "Signature" (Exemple : un bleu profond et élégant)
+$clr-primary:   #2c3e50; 
+$clr-accent:    #e74c3c; // Une couleur vive pour les appels à l'action ou lettrines
+
+// 2. LES FONCTIONS (L'usage sémantique)
+// C'est ici qu'on définit "qui fait quoi"
+$color-bg:      $clr-white;    // Couleur de fond du site
+$color-text:    $clr-black;    // Couleur du corps de texte
+$color-title:   $clr-primary;  // Couleur des titres
+$color-link:    $clr-primary;  // Couleur des liens
+$color-highlight: $clr-accent; // Couleur pour les éléments qui doivent ressortir (lettrines !)

@@ -1,4 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700;900&display=swap");
+p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.55;
+  font-size: 1.25rem;
+}
+p.small {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 4.5rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  color: #2c3e50;
+  line-height: 1.1;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+
+h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.lettrine {
+  font-family: "Playfair Display", serif;
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 0.8;
+  color: #e74c3c;
+  float: left;
+  margin-right: 12px;
+}
+
 body {
-  background-color: red;
-  color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.55;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding: 0 2rem;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 0 1rem;
+  }
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+/* --- MODULE : LAYOUT GRID --- */
+.l-grid {
+  display: grid;
+  gap: var(--grid-gap, 2rem);
+  margin: 2rem 0;
+}
+
+.l-grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 768px) {
+  .l-grid--2 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.l-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 768px) {
+  .l-grid--3 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

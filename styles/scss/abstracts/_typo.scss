@@ -1,0 +1,81 @@
+@use 'colors';
+
+// 1. IMPORTATION GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700;900&display=swap');
+
+// 2. POLICES & GRAISSES
+$font-main: 'Montserrat', sans-serif;
+$font-title: 'Playfair Display', serif;
+$w-regular: 400;
+$w-bold: 700;
+$w-black: 900;
+
+// 3. TAILLES (Fixes)
+$size-h1: 4.5rem;
+$size-h2: 2.5rem;
+$size-h3: 2rem;
+$size-h4: 1.75rem;
+$size-h5: 1.5rem;
+$size-h6: 1.25rem;
+
+$size-text: 1.25rem;
+$size-text-small: 1rem;
+
+// 4. APPLICATION
+p {
+    font-family: $font-main;
+    line-height: 1.55;
+    font-size: $size-text;
+
+    &.small {
+        font-size: $size-text-small;
+        line-height: 1.4;
+    }
+}
+
+h1 {
+    font-family: $font-title;
+    font-size: $size-h1;
+    font-weight: $w-black;
+}
+
+h2 {
+    font-family: $font-title;
+    color: colors.$color-title;
+    line-height: 1.1;
+    font-size: $size-h2;
+}
+
+h3 {
+    font-family: $font-title;
+    font-size: $size-h3;
+}
+
+h4 {
+    font-family: $font-title;
+    font-size: $size-h4;
+}
+
+h5 {
+    font-family: $font-title;
+    font-weight: $w-bold;
+    font-size: $size-h5;
+}
+
+h6 {
+    font-family: $font-title;
+    font-weight: $w-bold;
+    font-size: $size-h6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.lettrine {
+    font-family: $font-title;
+    font-size: 4.5rem;   
+    font-weight: $w-black;
+    line-height: 0.8;
+    color: colors.$color-highlight; 
+    float: left;
+    margin-right: 12px;
+}

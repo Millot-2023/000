@@ -1,0 +1,35 @@
+// styles/scss/abstracts/_titles.scss
+@use 'colors';
+@use 'typo';
+
+.c-title-group {
+    // On utilise une variable pour la marge, avec 2rem par défaut
+    margin: var(--title-group-margin, 2rem 0);
+
+    &__item {
+        // Couleur pilotable, fallback sur ta variable SASS
+        color: var(--title-color, colors.$color-text);
+        font-family: typo.$font-title;
+        margin-bottom: 1rem;
+        letter-spacing: 0.05em;
+        line-height: 1.2;
+
+        // Gestion de la taille : on adapte selon le type de titre
+        // et on injecte le responsive directement ici
+        &.c-title-group__item--h1 {
+            font-size: 3rem;
+            @media (max-width: 768px) {
+                font-size: 2.2rem;
+            }
+        }
+
+        &.c-title-group__item--h2 {
+            font-size: 2.5rem;
+            @media (max-width: 768px) {
+                font-size: 1.8rem;
+            }
+        }
+        
+        // ... tu peux continuer pour h3, h4 etc.
+    }
+}

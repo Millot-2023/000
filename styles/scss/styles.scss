@@ -1,4 +1,7 @@
-body{
-    background-color:red;
-    color:rgb(0, 0, 0);
-}
+// styles/scss/styles.scss
+
+@use './abstracts/colors';
+@use './abstracts/typo';
+
+@use './abstracts/bases' as *;      // Styles généraux (Desktop)
+@use './abstracts/grid' as *;       // Structure (Desktop + Mobile interne)

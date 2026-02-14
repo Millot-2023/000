@@ -1,0 +1,28 @@
+/* --- MODULE : LAYOUT GRID --- */
+
+// Base de la grille (commune)
+.l-grid {
+    display: grid;
+    gap: var(--grid-gap, 2rem);
+    margin: 2rem 0;
+}
+
+// Bloc 2 colonnes indépendant
+.l-grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+// Bloc 3 colonnes indépendant
+.l-grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

@@ -1,0 +1,23 @@
+// styles/scss/abstracts/_base.scss
+@use 'typo';
+@use 'colors';
+
+body {
+    font-family: typo.$font-main;
+    font-size: typo.$size-text;
+    line-height: 1.55; 
+    background-color: colors.$color-bg;
+    color: colors.$color-text;
+    padding: 0 2rem;
+    margin: 0;
+
+    @media (max-width: 768px) {
+        padding: 0 1rem;
+    }
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
