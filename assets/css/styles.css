@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700;900&display=swap");
 p {
   font-family: "Montserrat", sans-serif;
-  line-height: 1.55;
+  /*line-height: 1.55;*/
   font-size: 1.25rem;
 }
 p.small {
@@ -105,11 +105,15 @@ main {
   width: 100%;
   margin-bottom: 2rem;
 }
+.c-float-container p:first-of-type {
+  margin-top: 0;
+}
 
 .u-float-left {
   float: left;
   width: 150px;
   height: 100px;
+  margin-top: 5px;
   margin-right: 1.5rem;
   margin-bottom: 1rem;
   background-color: #f4f4f4;
@@ -129,6 +133,7 @@ main {
   float: right;
   width: 150px;
   height: 100px;
+  margin-top: 5px;
   margin-left: 1.5rem;
   margin-bottom: 1rem;
   background-color: #f4f4f4;

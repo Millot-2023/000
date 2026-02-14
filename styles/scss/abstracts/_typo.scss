@@ -24,7 +24,7 @@ $size-text-small: 1rem;
 // 4. APPLICATION
 p {
     font-family: $font-main;
-    line-height: 1.55;
+    /*line-height: 1.55;*/
     font-size: $size-text;
 
     &.small {

@@ -5,7 +5,6 @@
     gap: var(--grid-gap, 2rem);
     margin: 2rem 0;
 
-    // Bloc 2 colonnes (Optionnel, conservé car présent dans ton code)
     &--2 {
         grid-template-columns: repeat(2, 1fr);
 
@@ -14,7 +13,6 @@
         }
     }
 
-    // Bloc 3 colonnes : C'est ici que le "3 ou 1" est appliqué
     &--3 {
         grid-template-columns: repeat(3, 1fr);
 
@@ -29,12 +27,18 @@
     display: flow-root; 
     width: 100%;
     margin-bottom: 2rem;
+
+    // Supprime la marge haute du premier paragraphe pour éviter le décalage
+    p:first-of-type {
+        margin-top: 0;
+    }
 }
 
 .u-float-left {
     float: left;
     width: 150px;
     height: 100px;
+    margin-top: 5px; // Aligne l'image au sommet du texte
     margin-right: 1.5rem;
     margin-bottom: 1rem;
     background-color: #f4f4f4;
@@ -48,6 +52,7 @@
     float: right;
     width: 150px;
     height: 100px;
+    margin-top: 5px; // Aligne l'image au sommet du texte
     margin-left: 1.5rem;
     margin-bottom: 1rem;
     background-color: #f4f4f4;
