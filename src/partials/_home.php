@@ -42,6 +42,7 @@
 </div>
 
 <hr>
+
 <!--2colonnes-->
 <div class="c-block-wrapper">
     <div id="copy-target-08" class="l-grid l-grid--2" style="--grid-gap: 2rem;">
@@ -56,6 +57,9 @@
     </div>
     <button class="c-block-wrapper__copy-btn" data-target="copy-target-08">Copy</button>    
 </div>
+
+<hr>
+
 <!--3colonnes-->
 <div class="c-block-wrapper">
     <div id="copy-target-09" class="l-grid l-grid--3" style="--grid-gap: 2rem;">
@@ -77,7 +81,7 @@
 
 
 
-
+<hr>
 
 <!--Foat-->
 <div class="c-block-wrapper">
@@ -89,7 +93,7 @@
     </div>
     <button class="c-block-wrapper__copy-btn" data-target="copy-target-10">Copy</button>
 </div>
-
+<hr>
 <div class="c-block-wrapper">
     <div id="copy-target-11" class="c-float-container">
         <div class="u-no-float">
@@ -99,7 +103,7 @@
     </div>
     <button class="c-block-wrapper__copy-btn" data-target="copy-target-11">Copy</button>
 </div>
-
+<hr>
 <div class="c-block-wrapper">
     <div id="copy-target-12" class="c-float-container">
         <div class="u-float-right">
